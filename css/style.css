@@ -244,7 +244,7 @@ a:hover {
 	white-space:normal;
   	background-color:var(--button-background,transparent);
 	color:var(--button-text,#000000);
-	border:var(--button-border,none);
+	border: 2px solid #2ea043 !important;
 	border-radius:0px;
 	box-shadow: 4px 4px 0px #000000; 
 	cursor:pointer;
