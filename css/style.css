@@ -100,15 +100,14 @@ body {
   h1 {
 	font-family: 'Press Start 2P';
     text-transform: uppercase;   /* Forces "VIPERSTREETS" to be all caps like the logo */
-    font-size: 2.75rem !important;          /* Pixel fonts need to be a bit smaller or they look huge */
+    font-size: clamp(1rem, 8vw, 2.5rem) !important;          /* Pixel fonts need to be a bit smaller or they look huge */
     letter-spacing: -1px !important;      /* Tightens the letters to look like a solid block */
     color: #2ea043;              /* Optional: Matches the "Green" in your snake */
-    line-height: 1.1;            /* Gives it breathing room */
+    white-space: nowrap;
+	text-align: center;
+	line-height: 1;            /* Gives it breathing room */
     text-shadow: 4px 4px 0px #000; /* Adds the hard retro shadow */
-	margin:0 0 0.5rem 0;
-	word-wrap:break-word;
-	overflow-wrap:break-word;
-	hyphens:auto;           		/* Delete this to remove automatic hyphen on line break */
+	margin-top: 10px;
 }
 
  h2 {
