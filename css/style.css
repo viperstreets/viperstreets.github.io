@@ -132,15 +132,19 @@ h1 {
 .studio-text { 
 	color: #52d8e7 !important;
 	font-family:monospace !important;
-	font-size: 3rem !important;
-	letter-spacing: 30px !important;
+	font-size: 2rem !important;
+	letter-spacing: 15px !important;
 	text-align: center !important;
 } /* The Blue, smaller */
 
 /* DESKTOP SAFETY: Stop it from getting too huge on PC */
 @media (min-width: 600px) {
     .viper-text, .streets-text {
-        font-size: 4rem; /* Cap the size on big screens */
+        font-size: 4rem !important; /* Cap the size on big screens */
+    }
+	.studio-text {
+        font-size: 3.5rem !important; /* Cap the size on big screens */
+		letter-spacing: 30px !important;
     }
 }
 
