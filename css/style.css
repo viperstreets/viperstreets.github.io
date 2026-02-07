@@ -110,7 +110,7 @@ h1 {
     text-transform: uppercase;   /* Forces "VIPERSTREETS" to be all caps like the logo */
     white-space: nowrap;
 	width: 100%;
-	text-align: center;
+	text-align: center !important;
 	line-height: 0.8;            /* Gives it breathing room */
     text-shadow: 4px 4px 0px #000; /* Adds the hard retro shadow */
 }
@@ -120,27 +120,27 @@ h1 {
 	font-size: 10vw;
 	font-family: 'Press Start 2P';
 	letter-spacing: -1.5px; 
+	text-align: center !important;
 } 
 .streets-text { 
 	color: #52d8e7 !important; 
 	font-size: 10vw;
 	font-family: 'Press Start 2P';
 	letter-spacing: -1.5px; 
+	text-align: center !important;
 }
 .studio-text { 
 	color: #52d8e7 !important;
 	font-family:monospace !important;
-	font-size: 2.5rem !important;
-	letter-spacing: 35px !important;
+	font-size: 3rem !important;
+	letter-spacing: 30px !important;
+	text-align: center !important;
 } /* The Blue, smaller */
 
 /* DESKTOP SAFETY: Stop it from getting too huge on PC */
 @media (min-width: 600px) {
     .viper-text, .streets-text {
         font-size: 4rem; /* Cap the size on big screens */
-    }
-	.studio-text {
-        letter-spacing: 25px; /* Cap the size on big screens */
     }
 }
 
@@ -167,8 +167,8 @@ h1 {
 
 /* Avatar */
 .avatar {
-	width: 12rem;             /* 128px */
-	height: 12rem;
+	width: 14rem;            
+	height: 14rem;
 	border-radius: 15px;
 	border: 4px solid #00ff41;           /* Thick retro border */
     box-shadow: 6px 6px 0px #000000;     /* Hard shadow behind the image */
@@ -284,31 +284,6 @@ a:hover {
 	margin-right:0.5rem;
 	flex-shrink:0;
 }
-
-/* Avatar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.avatar {
-	width: 16rem;             /* 128px */
-	height: 16rem;
-	object-fit: cover;
-	background-position: center;
-	margin-bottom: var(--spacing-l);
-  }
-
-   /* Modifier for no avatar rounding */
-   .avatar--none {
-	border-radius: 0%;
-  }
-
-  /* Modifier for rounded avatar */
-  .avatar--rounded {
-	border-radius: 15%;
-  }
-
-  /* Modifier for slightly rounded corners */
-  .avatar--soft {
-	border-radius: 0.5rem;   /* 8px rounded corners */
-  }
 
 /* Button Text Color Override
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
