@@ -6,6 +6,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* Base Typography Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -83,11 +84,14 @@
 /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   h1 {
+	font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;   /* Forces "VIPERSTREETS" to be all caps like the logo */
+    font-size: 1.8rem;           /* Pixel fonts need to be a bit smaller or they look huge */
+    letter-spacing: -1px;        /* Tightens the letters to look like a solid block */
+    color: #2ea043;              /* Optional: Matches the "Green" in your snake */
+    line-height: 1.5;            /* Gives it breathing room */
+    text-shadow: 4px 4px 0px #000; /* Adds the hard retro shadow */
 	margin:0 0 0.5rem 0;
-	font-size:3rem;         		/* 48px */
-    font-weight:800;
-	line-height:1;
-	letter-spacing:0;
 	word-wrap:break-word;
 	overflow-wrap:break-word;
 	hyphens:auto;           		/* Delete this to remove automatic hyphen on line break */
@@ -95,6 +99,9 @@
 .container p {
 	margin:0 0 2rem 0;
 }
+
+.viper-text { color: #2ea043; } /* The Snake Green */
+.studio-text { color: #58a6ff; font-size: 0.7em; } /* The Blue, slightly smaller */
 
 /* Base Typography Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
